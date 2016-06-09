@@ -9,6 +9,10 @@ section.container {
     }
     header {
         padding: 20px 100px;
+        ul.nav.nav-list {
+            float: left;
+            margin-left: 3em;
+        }
     }
 }
 
