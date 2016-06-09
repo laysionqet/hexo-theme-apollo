@@ -16,7 +16,8 @@ mixin posts()
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
+                    if item.content.length > 140
+                        a.read-more(href= url_for(item.path))!= __('more')
         - })
 
 //- Archive Page
